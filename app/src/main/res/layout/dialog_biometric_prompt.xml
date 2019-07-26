@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        app:bl_corners_radius="6dp"
+        app:bl_solid_color="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ic_fingerprint" />
+
+        <TextView
+            android:id="@+id/tv_biometric_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="请验证指纹"
+            android:textColor="#ff2c2c2c"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tv_biometric_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="11dp"
+            android:text="取消"
+            android:textColor="#4C88FF"
+            android:textSize="16sp"
+            app:bl_corners_bottomLeftRadius="6dp"
+            app:bl_corners_bottomRightRadius="6dp"
+            app:bl_pressed_solid_color="@color/btn_white_press"
+            app:bl_unPressed_solid_color="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

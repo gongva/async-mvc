@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default">
+
+    <GridView
+        android:id="@+id/gd_multi_image_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:clipToPadding="false"
+        android:horizontalSpacing="6dp"
+        android:listSelector="@android:drawable/screen_background_light_transparent"
+        android:numColumns="3"
+        android:paddingBottom="0dp"
+        android:verticalSpacing="6dp" />
+
+    <TextView
+        android:id="@+id/tv_multi_image_selector_timeline_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cc000000"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10sp"
+        android:paddingTop="5dp"
+        android:textColor="#CDCECE"
+        android:textSize="14sp"
+        tools:text="2015年4月1日" />
+</RelativeLayout>

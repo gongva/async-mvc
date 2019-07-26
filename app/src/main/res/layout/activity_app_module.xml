@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vivi.asyncmvc.comm.view.scroll.StretchScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.vivi.asyncmvc.ui.home.appmodule.AppModuleAreaMineView
+            android:id="@+id/amv_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <com.vivi.asyncmvc.ui.home.appmodule.AppModuleAreaView
+            android:id="@+id/amv_driver_license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <com.vivi.asyncmvc.ui.home.appmodule.AppModuleAreaView
+            android:id="@+id/amv_car_license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.vivi.asyncmvc.ui.home.appmodule.AppModuleAreaView
+            android:id="@+id/amv_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.vivi.asyncmvc.comm.view.scroll.StretchScrollView>

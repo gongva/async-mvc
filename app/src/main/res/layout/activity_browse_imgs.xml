@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vivi.asyncmvc.ui.comm.selectimg.ViewPagerFixed
+        android:id="@+id/vp_browse_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:fadingEdge="none" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_browse_imgs_nav"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_browse_imgs_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left"
+            android:background="@drawable/bg_color_menu_click"
+            android:drawableLeft="@drawable/ic_back_black"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color_2c2b40"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_browse_imgs_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="210dp"
+            android:singleLine="true"
+            android:textColor="@color/color_2c2b40"
+            android:textSize="18sp"
+            tools:text="标题标标题标标题标标题标标题标标题标" />
+
+        <LinearLayout
+            android:id="@+id/llt_browse_imgs_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_browse_imgs_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:padding="0dp"
+                android:textColor="@color/color_2c2b40"
+                android:textSize="14sp"
+                android:visibility="visible"
+                tools:text="菜单" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ryt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#cc31C6DA"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            android:paddingTop="5dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_select_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_oval_yellow"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FF6284"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

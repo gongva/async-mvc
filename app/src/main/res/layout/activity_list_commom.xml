@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rfl_list_common"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/tv_address_add"
+    android:background="@color/bg_default">
+
+    <!--marginTop是为了顶部留根分割线-->
+    <ListView
+        android:id="@+id/lv_list_common"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0.5dp"
+        android:divider="@null" />
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

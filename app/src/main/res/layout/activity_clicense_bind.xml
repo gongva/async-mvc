@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:text="请正确填写车辆信息"
+        android:textColor="#ff787878"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="号牌种类"
+                android:textColor="#ff141414"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="号牌号码"
+                    android:textColor="#ff141414"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_clicnese_bind_province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/ic_arrow_down_grey"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:text="贵"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp"
+                    app:bl_corners_radius="4dp"
+                    app:bl_pressed_solid_color="@color/btn_4E91F9_press"
+                    app:bl_unPressed_solid_color="@color/btn_4E91F9" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="发动机号后六位"
+                android:textColor="#ff141414"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="车主姓名"
+                android:textColor="#ff141414"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_clicnese_bind_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/ic_arrow_right_grey"
+                android:gravity="center_vertical|right"
+                android:text="小型汽车"
+                android:textColor="#2C2C2C"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+
+            <EditText
+                android:id="@+id/tv_clicnese_bind_plate_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入车牌号码"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#2C2C2C"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+
+            <EditText
+                android:id="@+id/tv_clicnese_bind_engine_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入发动机号后6位"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#2C2C2C"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+
+            <EditText
+                android:id="@+id/tv_clicnese_bind_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入车主姓名"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#2C2C2C"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:text="请输入机动车车主收到的验证码"
+        android:textColor="#ff787878"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="验证码"
+            android:textColor="#ff141414"
+            android:textSize="14sp" />
+
+        <com.vivi.asyncmvc.comm.view.edit.CaptchaEditText
+            android:id="@+id/edt_clicnese_bind_captcha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_clicnese_bind_commit"
+        style="@style/ButtonBlueCornerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="80dp"
+        android:text="下一步" />
+</LinearLayout>

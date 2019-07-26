@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_327BEE"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxWidth="210dp"
+                android:singleLine="true"
+                android:text="我的二维码"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_d_code_back"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="left"
+            android:background="@drawable/bg_color_menu_click"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_back_white"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="10dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="请向交警出示该二维码（目前仅支持贵阳市驾驶证）"
+        android:textColor="#bbffffff"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                app:bl_corners_topLeftRadius="6dp"
+                app:bl_corners_topRightRadius="6dp"
+                app:bl_solid_color="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_d_code_head"
+                    android:layout_width="85dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_img_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_d_code_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp"
+                        tools:text="姓名：张三" />
+
+                    <TextView
+                        android:id="@+id/tv_d_code_car_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="准驾车型：C1"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_d_code_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="有效期：2026-12-15"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    app:bl_corners_bottomRightRadius="6dp"
+                    app:bl_corners_topRightRadius="6dp"
+                    app:bl_solid_color="@color/color_327BEE" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/line" />
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    app:bl_corners_bottomLeftRadius="6dp"
+                    app:bl_corners_topLeftRadius="6dp"
+                    app:bl_solid_color="@color/color_327BEE" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                app:bl_corners_bottomLeftRadius="6dp"
+                app:bl_corners_bottomRightRadius="6dp"
+                app:bl_solid_color="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_d_code_license"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:background="@drawable/ic_img_default" />
+
+                <TextView
+                    android:id="@+id/tv_d_code_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_refresh"
+                    android:drawablePadding="6dp"
+                    android:padding="25dp"
+                    android:text="每分钟自动更新"
+                    android:textColor="#ffb6b6b6"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

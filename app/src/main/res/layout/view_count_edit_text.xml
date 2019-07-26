@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <EditText
+        android:id="@+id/edt_count_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="left|top"
+        android:hint="请输入内容"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingBottom="10dp"
+        android:textColor="#FF502D2E"
+        android:textColorHint="#ccc"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/edt_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="0/200"
+        android:textColor="#969696"
+        android:textSize="12sp" />
+</LinearLayout>

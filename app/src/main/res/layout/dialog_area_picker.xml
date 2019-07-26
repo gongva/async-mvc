@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:bl_corners_topLeftRadius="10dp"
+        app:bl_corners_topRightRadius="10dp"
+        app:bl_solid_color="@color/white">
+
+        <TextView
+            android:id="@+id/tv_area_picker_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="取消"
+            android:textColor="#ff242424"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_area_picker_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="确定"
+            android:textColor="#ff4e91f9"
+            android:textSize="16sp" />
+
+
+        <ProgressBar
+            android:id="@+id/pb_area_picker"
+            style="@style/AppProgressBar"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="12dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="请选择省"
+            android:textColor="#ff797979"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="请选择市"
+            android:textColor="#ff797979"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="请选择区"
+            android:textColor="#ff797979"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:weightSum="3">
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/pv_area_province"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:npv_DividerColor="@color/line"
+            app:npv_DividerHeight="0.5dp"
+            app:npv_ItemPaddingVertical="15sp"
+            app:npv_RespondChangeOnDetached="false"
+            app:npv_ShowCount="5"
+            app:npv_TextColorNormal="#242424"
+            app:npv_TextColorSelected="#4E91F9"
+            app:npv_TextSizeNormal="14sp"
+            app:npv_TextSizeSelected="14sp"
+            app:npv_WrapSelectorWheel="false" />
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/pv_area_city"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:npv_DividerColor="@color/line"
+            app:npv_DividerHeight="0.5dp"
+            app:npv_ItemPaddingVertical="15sp"
+            app:npv_RespondChangeOnDetached="false"
+            app:npv_ShowCount="5"
+            app:npv_TextColorNormal="#242424"
+            app:npv_TextColorSelected="#4E91F9"
+            app:npv_TextSizeNormal="14sp"
+            app:npv_TextSizeSelected="14sp"
+            app:npv_WrapSelectorWheel="false" />
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/pv_area_county"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:npv_DividerColor="@color/line"
+            app:npv_DividerHeight="0.5dp"
+            app:npv_ItemPaddingVertical="15sp"
+            app:npv_RespondChangeOnDetached="false"
+            app:npv_ShowCount="5"
+            app:npv_TextColorNormal="#242424"
+            app:npv_TextColorSelected="#4E91F9"
+            app:npv_TextSizeNormal="14sp"
+            app:npv_TextSizeSelected="14sp"
+            app:npv_WrapSelectorWheel="false" />
+    </LinearLayout>
+</LinearLayout>

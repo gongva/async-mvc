@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/AddressAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item_click"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货姓名"
+                android:textColor="#ff242424"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_address_add_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:hint="请输入收货人姓名"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingBottom="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="18dp"
+                android:textColor="#ff242424"
+                android:textColorHint="#ffc3c3c3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            style="@style/AddressAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item_click"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式"
+                android:textColor="#ff242424"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_address_add_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:hint="请输入电话号码"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:paddingBottom="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="18dp"
+                android:textColor="#ff242424"
+                android:textColorHint="#ffc3c3c3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            style="@style/AddressAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item_click"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="省/市/区"
+                android:textColor="#ff242424"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_address_add_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="请选择省/市/区"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingBottom="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="18dp"
+                android:textColor="#ff242424"
+                android:textColorHint="#ffc3c3c3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_address_add_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right_grey" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            style="@style/AddressAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item_click"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详细地址"
+                android:textColor="#ff242424"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_address_add_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:hint="请填写详细地址"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:paddingBottom="18dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="18dp"
+                android:textColor="#ff242424"
+                android:textColorHint="#ffc3c3c3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            style="@style/AddressAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item_click"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设为默认"
+                android:textColor="#ff242424"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="18dp"
+                android:paddingTop="18dp" />
+
+            <ImageView
+                android:id="@+id/iv_address_add_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_switch_off" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_address_add_commit"
+        style="@style/ButtonBlueCornerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="44dp"
+        android:text="保存" />
+</LinearLayout>

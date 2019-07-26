@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlt_error_page_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:minHeight="260dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_error_page_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无内容"
+        android:textColor="#FFB6B6B6"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv_error_page_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_error_page_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/ic_error_no_content" />
+
+    <TextView
+        android:id="@+id/tv_error_page_action"
+        style="@style/ButtonBlueCornerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_error_page_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="9dp"
+        android:paddingTop="9dp"
+        tools:text="知道了" />
+</RelativeLayout>

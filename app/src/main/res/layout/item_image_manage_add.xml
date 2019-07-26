@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vivi.asyncmvc.comm.view.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlt_image_manage_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:background="@drawable/selector_list_item_click"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_add_blue" />
+    </RelativeLayout>
+</com.vivi.asyncmvc.comm.view.SquareLayout>

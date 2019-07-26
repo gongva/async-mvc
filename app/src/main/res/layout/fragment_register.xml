@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:bl_corners_radius="6dp"
+        app:bl_solid_color="@color/white">
+
+        <com.vivi.asyncmvc.comm.view.edit.ClearEditText
+            android:id="@+id/edt_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="请输入手机号码"
+            android:inputType="numberDecimal"
+            android:maxLength="11"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="#2C2C2C"
+            android:textColorHint="@color/edit_hit"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <com.vivi.asyncmvc.comm.view.edit.CaptchaEditText
+            android:id="@+id/edt_register_captcha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <Button
+            android:id="@+id/btn_register_next"
+            style="@style/ButtonBlueCornerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:text="下一步" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="点击“下一步”即表示您同意如下协议"
+            android:textColor="#ff969696"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_register_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:text=" 《电子驾照服务管理平台服务协议》"
+            android:textColor="#4E91F9"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

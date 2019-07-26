@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFFFF</color>
+    <color name="colorAccent">#FF4E91F9</color>
+
+    <!-- 标题栏颜色 -->
+    <color name="title_bar">#FFFFFF</color>
+    <!--菜单点击颜色-->
+    <drawable name="menu_bg_pressed">#14000000</drawable>
+    <drawable name="menu_bg_normal">#00000000</drawable>
+    <!--背景：页面默认-->
+    <color name="bg_default">#F8F8F8</color>
+    <!--指纹弹框-->
+    <color name="bg_biometric_prompt_dialog">#99000000</color>
+    <color name="text_quaternary">#CDCED0</color>
+    <color name="text_red">#FF5555</color>
+    <color name="text_green">#82C785</color>
+    <!-- 透明 -->
+    <color name="color_transparent">#00000000</color>
+    <!--默认分割线-->
+    <color name="line">#E5E5E5</color>
+    <!--按钮颜色-->
+    <color name="btn_disable">#FFD8D8D8</color>
+    <color name="btn_4E91F9">#FF4E91F9</color>
+    <color name="btn_4E91F9_press">#AA4E91F9</color>
+    <color name="btn_white_press">#FFE5E5E5</color>
+    <!--常用颜色清单-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="edit_hit">#FFC3C3C3</color>
+    <color name="color_5a5a5a">#FF5A5A5A</color>
+    <color name="color_2c2b40">#FF2C2B40</color>
+    <color name="color_327BEE">#FF327BEE</color>
+    <color name="color_3E5DC7">#FF3E5DC7</color>
+</resources>

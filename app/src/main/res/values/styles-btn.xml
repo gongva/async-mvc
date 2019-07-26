@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 页面内部的蓝色按钮，圆角 -->
+    <style name="ButtonBlueCornerStyle">
+        <item name="android:background">@drawable/selector_btn_blue_corner</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 页面内部的蓝色按钮，直角 -->
+    <style name="ButtonBlueAngleStyle" parent="ButtonBlueCornerStyle">
+        <item name="android:background">@drawable/selector_btn_blue_angle</item>
+    </style>
+</resources>

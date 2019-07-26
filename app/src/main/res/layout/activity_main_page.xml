@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vivi.asyncmvc.comm.view.scroll.HikViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_divider" />
+
+    <View
+        android:id="@+id/main_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/main_tabToolbar"
+        android:background="@color/line" />
+
+    <RadioGroup
+        android:id="@+id/main_tabToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:weightSum="3">
+
+        <com.vivi.asyncmvc.comm.view.PointRadioButton
+            android:id="@+id/radio_main_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_main_home"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/color_main_tab_text"
+            android:textSize="12sp" />
+
+        <com.vivi.asyncmvc.comm.view.PointRadioButton
+            android:id="@+id/radio_main_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_main_car"
+            android:gravity="center"
+            android:text="爱车"
+            android:textColor="@color/color_main_tab_text"
+            android:textSize="12sp" />
+
+        <com.vivi.asyncmvc.comm.view.PointRadioButton
+            android:id="@+id/radio_main_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_main_me"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/color_main_tab_text"
+            android:textSize="12sp" />
+    </RadioGroup>
+</RelativeLayout>

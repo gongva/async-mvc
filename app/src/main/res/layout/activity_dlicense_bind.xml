@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <com.vivi.asyncmvc.comm.view.edit.ClearEditText
+        android:id="@+id/edt_driver_license_bind_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="请输入电子驾驶证档案编号"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="#2C2C2C"
+        android:textColorHint="@color/edit_hit"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_driver_license_bind_commit"
+        style="@style/ButtonBlueCornerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="134dp"
+        android:text="确定" />
+</LinearLayout>

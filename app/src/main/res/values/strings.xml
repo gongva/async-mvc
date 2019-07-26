@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ASyncMvc</string>
+
+    <!--带计数功能输入框的字数提示：0/200-->
+    <string name="count_edit_text_count"><Data><![CDATA[<font color="#ff6386">%1$s</font><font color="#969696">/%2$s</font>]]></Data></string>
+    <string name="bind_mode_scan_des">扫描车主本人机动车\n二维码，识别绑定</string>
+    <string name="bind_mode_manual_des">手动输入车主本人机动车\n信息，短信验证绑定</string>
+    <string name="bind_mode_note">温馨提示 \n1、同一用户最多可以同时备案3辆（含3辆）非本人机动车； \n2、一辆机动车最多同时被3个（含3个）非车主用户备案；</string>
+    <string name="consult_note">如果您在使用过程中有什么疑问或者建议\n请咨询客服</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_list_item_click"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_c_category_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item_click"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_c_category_plate_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贵A W2121"
+            android:textColor="#ff141414"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_c_category_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="**彪"
+            android:textColor="#ff787878"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_c_category_illegal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#33E93B46"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="违法未处理"
+            android:textColor="#ffe93b46"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_c_category_legal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正常"
+            android:textColor="#ff787878"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

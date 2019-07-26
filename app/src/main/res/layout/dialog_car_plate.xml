@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:bl_corners_topLeftRadius="10dp"
+        app:bl_corners_topRightRadius="10dp"
+        app:bl_solid_color="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/llt_dialog_province_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/tv_dialog_province_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="取消"
+        android:textColor="#ff4e91f9"
+        android:textSize="16sp"
+        app:bl_pressed_solid_color="@color/btn_white_press"
+        app:bl_unPressed_solid_color="@color/white" />
+</LinearLayout>

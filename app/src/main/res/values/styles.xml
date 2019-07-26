@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item><!--标题栏-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item><!--状态栏-->
+        <item name="colorAccent">@color/colorAccent</item><!--默认的光标、选中的RadioButton颜色-->
+    </style>
+
+    <!-- 提交时的Dialog -->
+    <style name="LoadingDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 弹出框Dialog -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 -->
+    <style name="AlertDialogBottomStyle" parent="AlertDialogStyle">
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/DialogActionSheetAnim</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="DialogActionSheetAnim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/anim_actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_actionsheet_dialog_out</item>
+    </style>
+
+    <!--透明页面-->
+    <style name="TranslucentFullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!--页面加载Progress-->
+    <style name="AppProgressBar" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/anim_progress_init</item>
+        <item name="android:indeterminateDuration">2500</item>
+    </style>
+
+    <!--页面提交Progress-->
+    <style name="AppProgressCommit" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/anim_progress_commit</item>
+        <item name="android:indeterminateDuration">2500</item>
+    </style>
+
+    <!--个人中心Item-->
+    <style name="MeItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <!--设置Item-->
+    <style name="SettingItem">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <!--新增收货地址Item-->
+    <style name="AddressAddItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+</resources>
